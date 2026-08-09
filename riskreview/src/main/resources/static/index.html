@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RiskReview</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>RiskReview</h1>
+        <p>Analyze the risk of a GitHub Pull Request</p>
+    </header>
+
+    <main>
+
+        <section class="review-box">
+
+            <label for="prUrl">GitHub Pull Request URL</label>
+
+            <div class="input-row">
+
+                <input
+                        type="url"
+                        id="prUrl"
+                        placeholder="https://github.com/owner/repository/pull/123"
+                >
+
+                <button id="analyzeButton">
+                    Analyze PR
+                </button>
+
+            </div>
+
+            <p id="errorMessage" class="error"></p>
+
+        </section>
+
+        <section id="result" class="result hidden">
+
+            <div class="score-card">
+
+                <div>
+                    <span>Risk Score</span>
+                    <strong id="riskScore">0</strong>
+                </div>
+
+                <div>
+                    <span>Risk Level</span>
+                    <strong id="riskLevel">-</strong>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Risk Signals</h2>
+
+                <div id="signals"></div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Recommendations</h2>
+
+                <ul id="recommendations"></ul>
+
+            </div>
+
+        </section>
+
+        <div id="loading" class="loading hidden">
+            Analyzing pull request...
+        </div>
+
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

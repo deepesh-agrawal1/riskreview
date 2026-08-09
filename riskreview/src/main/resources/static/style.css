@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #6b7280;
+}
+
+.review-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #111827;
+    color: white;
+}
+
+button:hover {
+    background: #374151;
+}
+
+.error {
+    color: #dc2626;
+    margin-top: 10px;
+}
+
+.result {
+    margin-top: 25px;
+}
+
+.score-card {
+    display: flex;
+    gap: 20px;
+}
+
+.score-card > div {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.score-card span {
+    display: block;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.score-card strong {
+    font-size: 32px;
+}
+
+.section {
+    background: white;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.signal {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #f59e0b;
+    background: #fffbeb;
+    border-radius: 5px;
+}
+
+.signal strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signal small {
+    color: #6b7280;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 25px;
+    color: #6b7280;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .score-card {
+        flex-direction: column;
+    }
+}

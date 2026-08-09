@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class ReviewRequest {
-    private String prURL;
+    private String prUrl;
 
 }
